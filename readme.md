@@ -1,10 +1,12 @@
-# png-itxt
+# png-itxt-streamer
 
-Windows        | Mac/Linux   
--------------- | ------------
-[![Windows Build status](http://img.shields.io/appveyor/ci/finnp/png-itxt.svg)](https://ci.appveyor.com/project/finnp/png-itxt/branch/master) | [![Build Status](https://travis-ci.org/finnp/png-itxt.svg?branch=master)](https://travis-ci.org/finnp/png-itxt)
+This tool is originally developed by finnp https://github.com/finnp/png-itxt
 
-[![js-standard-style](https://cdn.rawgit.com/feross/standard/master/badge.svg)](https://github.com/feross/standard)
+This is the bug fix to import the png-chunk-streamer dependency.
+
+Under this line is the original README.md (one change to the require('png-itxt') -> require('png-itxt-streamer'))
+
+----
 
 Tool for adding and reading textual data in PNG images using streams. All three textual chunks (`iTXt`, `zTXt` and `tEXt`) can be both read and written by the tool. Chunks can be filtered by chunk type and keyword as required. Compressing and decompressing of data, where appropriate, is handled transparently to the user so you only ever see the uncompressed values.
 
@@ -23,7 +25,7 @@ npm install png-itxt
 To use the tool in your node programs you must first require the module. If installed with npm then  you could write the following.
 
 ```js
-var pngitxt = require('png-itxt')
+var pngitxt = require('png-itxt-streamer')
 ```
 
 ## Constants

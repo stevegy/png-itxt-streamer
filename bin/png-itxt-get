@@ -16,7 +16,7 @@ program
   .option('-s, --stdin', 'reads the image data from standard input')
   .option('-f, --filter <chunktypes>', 'comma seperated list of chunk types to return')
   .option('-o, --output <file>', 'write results to a file')
-  .parse(process.argv)
+program.parse(process.argv)
 
 // Check a single file name was provided.
 if ((program.args.length != 1) && (!program.stdin)) {
